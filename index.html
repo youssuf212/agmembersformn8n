@@ -240,6 +240,48 @@
             font-weight: 500;
         }
 
+        .instructions-box {
+            background: #fafafa;
+            border: 1.5px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        .instructions-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .instructions-box .instructions-text {
+            color: #374151;
+            font-size: 0.9375rem;
+            line-height: 1.6;
+        }
+
+        .instructions-box .instructions-text p {
+            margin-bottom: 12px;
+        }
+
+        .instructions-box .instructions-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        .instructions-box .instructions-text strong {
+            color: #111827;
+            font-weight: 600;
+        }
+
+        .instructions-box .instructions-text .highlight {
+            background: #fef3c7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
         .submit-btn {
             width: 100%;
             padding: 16px 24px;
@@ -313,6 +355,14 @@
             .form-group textarea {
                 padding: 12px 14px;
             }
+
+            .instructions-box {
+                padding: 16px;
+            }
+
+            .instructions-box .instructions-text {
+                font-size: 0.875rem;
+            }
         }
 
         /* Enhanced error state */
@@ -358,6 +408,17 @@
                 <label for="youtubeName">YouTube Channel Name <span class="required">*</span></label>
                 <input type="text" id="youtubeName" name="youtubeName" placeholder="Your YouTube channel name" required>
                 <div class="error-message" id="youtubeNameError">Please enter your YouTube channel name</div>
+            </div>
+
+            <div class="instructions-box">
+                <img src="Pic.png" alt="YouTube Name Instructions">
+                <div class="instructions-text">
+                    <p><strong>How to get your YouTube channel name:</strong></p>
+                    <p>1. Head to your profile on YouTube</p>
+                    <p>2. Copy your <span class="highlight">channel name</span> (not the @handle)</p>
+                    <p>3. <strong>Don't paste a link</strong> – only paste the name itself</p>
+                    <p><strong>⚠️ Important:</strong> To ensure access, please make sure you enter the name correctly.</p>
+                </div>
             </div>
 
             <div class="form-group">
