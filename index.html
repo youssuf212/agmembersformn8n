@@ -172,15 +172,168 @@
         }
 
         .success-message {
+            display: none;
+        }
+
+        .success-message.show {
+            display: block;
+        }
+
+        .success-header {
             background: #f0f9ff;
             color: #0369a1;
-            padding: 16px 20px;
+            padding: 20px;
             border-radius: 12px;
-            margin-bottom: 24px;
+            margin-bottom: 28px;
             border: 1px solid #bae6fd;
-            display: none;
             text-align: center;
+        }
+
+        .success-header h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .success-header p {
+            font-size: 1rem;
             font-weight: 500;
+            margin: 0;
+        }
+
+        .next-steps {
+            background: #fafafa;
+            border: 1.5px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .next-steps h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .next-steps p {
+            color: #374151;
+            font-size: 0.9375rem;
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+
+        .next-steps .highlight {
+            background: #fef3c7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+            color: #92400e;
+        }
+
+        .access-steps {
+            background: white;
+            border: 1.5px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 16px 0;
+        }
+
+        .access-steps h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 14px;
+        }
+
+        .access-steps ol {
+            margin-left: 20px;
+            color: #374151;
+            font-size: 0.9375rem;
+            line-height: 1.8;
+        }
+
+        .access-steps ol li {
+            margin-bottom: 8px;
+        }
+
+        .access-steps ol li strong {
+            color: #111827;
+            font-weight: 600;
+        }
+
+        .support-box {
+            background: #fef2f2;
+            border: 1.5px solid #fecaca;
+            border-radius: 12px;
+            padding: 16px;
+            margin-top: 16px;
+        }
+
+        .support-box p {
+            color: #dc2626;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .support-box a {
+            color: #dc2626;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+
+        .cta-links {
+            margin-top: 28px;
+        }
+
+        .cta-link {
+            display: block;
+            padding: 16px 24px;
+            background: #000;
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.2s ease;
+            margin-bottom: 12px;
+        }
+
+        .cta-link:hover {
+            background: #111827;
+            transform: translateY(-1px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .cta-link.secondary {
+            background: white;
+            color: #000;
+            border: 1.5px solid #e5e7eb;
+        }
+
+        .cta-link.secondary:hover {
+            background: #fafafa;
+            border-color: #000;
+        }
+
+        .courses-note {
+            background: #fffbeb;
+            border: 1.5px solid #fde68a;
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-top: 12px;
+            font-size: 0.875rem;
+            color: #92400e;
+            line-height: 1.6;
+        }
+
+        .courses-note strong {
+            font-weight: 600;
         }
 
         .form-group {
@@ -351,6 +504,18 @@
                 font-size: 1.875rem;
             }
 
+            .success-header h2 {
+                font-size: 1.25rem;
+            }
+
+            .next-steps {
+                padding: 20px;
+            }
+
+            .next-steps h3 {
+                font-size: 1rem;
+            }
+
             .form-group input,
             .form-group textarea {
                 padding: 12px 14px;
@@ -362,6 +527,11 @@
 
             .instructions-box .instructions-text {
                 font-size: 0.875rem;
+            }
+
+            .cta-link {
+                padding: 14px 20px;
+                font-size: 0.9375rem;
             }
         }
 
@@ -394,7 +564,44 @@
         </div>
 
         <div class="success-message" id="successMessage">
-            🎉 Thank you for becoming a Member !
+            <div class="success-header">
+                <h2>🎉 Thank you for becoming a Member!</h2>
+                <p>Your application has been successfully submitted</p>
+            </div>
+
+            <div class="next-steps">
+                <h3>📋 Next Steps</h3>
+                <p>In <span class="highlight">10 minutes max</span>, you will get access to the learning documents hosted on your Google Drive and you will receive an invitation sent to your Gmail.</p>
+
+                <div class="access-steps">
+                    <h4>In order to access the Google Drive documents:</h4>
+                    <ol>
+                        <li>Head to <strong>Google Drive</strong></li>
+                        <li>Go to <strong>"Shared with me"</strong></li>
+                        <li>Check for <strong>"Members' Documents #2"</strong> folder</li>
+                    </ol>
+                </div>
+
+                <div class="support-box">
+                    <p>If you think something is going wrong, please send an email to <a href="mailto:agytmembers@gmail.com">agytmembers@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="cta-links">
+                <h3 style="font-size: 1rem; font-weight: 600; color: #111827; margin-bottom: 16px; text-align: center;">While you wait, explore our resources:</h3>
+                
+                <a href="https://www.galalconsulting.com/" target="_blank" rel="noopener noreferrer" class="cta-link">
+                    Visit Galal Consulting Website
+                </a>
+                
+                <a href="https://www.galalconsulting.com/courses" target="_blank" rel="noopener noreferrer" class="cta-link secondary">
+                    Browse All Our Free* Courses
+                </a>
+
+                <div class="courses-note">
+                    <strong>*Note:</strong> While courses are free, some of their videos are only visible to members only.
+                </div>
+            </div>
         </div>
 
         <form id="membershipForm">
@@ -515,11 +722,11 @@
                 
                 if (response.ok) {
                     // Show success message and hide form
-                    document.getElementById('successMessage').style.display = 'block';
+                    document.getElementById('successMessage').classList.add('show');
                     document.getElementById('membershipForm').style.display = 'none';
                     
                     // Scroll to success message
-                    document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth' });
+                    document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth', block: 'start' });
                 } else {
                     throw new Error('Network response was not ok');
                 }
